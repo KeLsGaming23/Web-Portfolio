@@ -13,6 +13,38 @@
 .left-heading{
     padding-top: 150px;
 }
+.big-heading{
+    animation-name: moveInUp;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+}
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem); }
+    80%{
+        transform: translateY(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
+.animation-from-bottom{
+    animation-name: moveInBottom;
+    animation-duration: .7s;
+    animation-timing-function: ease-out; 
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); }
+    80%{
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
 .box{
     padding-top: 10px;
     position: relative;
