@@ -138,6 +138,9 @@
     letter-spacing: 0.5em;
 }
 /* About Me Page Section */
+#aboutme{
+    margin: 10px 15px;
+}
 .aboutme-page{
     display: flex;
     justify-content: center;
@@ -186,12 +189,12 @@
     width: 100vw;
 }
 .aboutme-paragraph{
-    padding: 0 3%;
     width: 75%;
     animation-name: moveInUp;
     animation-duration: .7s;
     animation-timing-function: ease-out; 
 }
+/* Education Section */
 /* Screen for Mobile */
 @media (max-width:1028px) {
     #title{
