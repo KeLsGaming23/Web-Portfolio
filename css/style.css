@@ -175,9 +175,19 @@
 .image-profile{
     width: 250px;
     height: 250px;
+    animation-name: movesUp;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
 }
 .aboutme-long{
+    padding: 0 3%;
     width: 100vw;
+}
+.aboutme-paragraph{
+    padding: 0 3%;
+    animation-name: moveInUp;
+    animation-duration: .7s;
+    animation-timing-function: ease-out; 
 }
 /* Screen for Mobile */
 @media (max-width:1028px) {
