@@ -3,7 +3,7 @@
     padding: 0;
 }
 .navigation{
-    padding: 2% 5%;
+    padding: 2% 15% 2% 5%;
 }
 .main-container{
     height: 87vh;
@@ -137,6 +137,41 @@
 .content a:hover{
     letter-spacing: 0.5em;
 }
+/* About Me Page Section */
+.aboutme-page{
+    animation-name: movesUp;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+}
+@keyframes movesUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); }
+    80%{
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+}
+.bg-image-placeholder{
+    background-image: url("../images/imagePlaceholder.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.p-shadow{
+    text-shadow: 2px 4px 13px rgb(25, 24, 24);
+}
+.hr-width{
+    width: 75%;
+}
+.icon-color{
+    color: black;
+    transition: 0.5s;
+}
+.icon-color:hover{
+    color: #0b516f;
+}
 /* Screen for Mobile */
 @media (max-width:1028px) {
     #title{
@@ -150,4 +185,10 @@
         width: 350px;
         height: 350px;
     }
+    /* About Me Page Section */
+    .bg-image-placeholder{
+    background-image: url("../images/imagePlaceholder.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+}
 }
