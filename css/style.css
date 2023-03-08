@@ -10,6 +10,9 @@
     background-color: black;
     padding: 2% 5%;
 }
+.left-heading{
+    padding-top: 50px;
+}
 .box{
     position: relative;
     width: 500px;
