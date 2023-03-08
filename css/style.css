@@ -172,10 +172,20 @@
 .icon-color:hover{
     color: #0b516f;
 }
+.image-profile{
+    width: 250px;
+    height: 250px;
+}
+.aboutme-long{
+    width: 100vw;
+}
 /* Screen for Mobile */
 @media (max-width:1028px) {
     #title{
         text-align: center;
+    }
+    .navigation{
+        padding: 2% 5% 2% 5%;
     }
     .left-heading{
         padding-top: 50px;
