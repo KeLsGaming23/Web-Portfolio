@@ -139,6 +139,8 @@
 }
 /* About Me Page Section */
 .aboutme-page{
+    display: flex;
+    justify-content: center;
     animation-name: movesUp;
     animation-duration: .7s;
     animation-timing-function: ease-out;
@@ -185,6 +187,7 @@
 }
 .aboutme-paragraph{
     padding: 0 3%;
+    width: 75%;
     animation-name: moveInUp;
     animation-duration: .7s;
     animation-timing-function: ease-out; 
@@ -193,6 +196,9 @@
 @media (max-width:1028px) {
     #title{
         text-align: center;
+    }
+    .main-container{
+        height: 50vh;
     }
     .navigation{
         padding: 2% 5% 2% 5%;
@@ -209,6 +215,13 @@
     .bg-image-placeholder{
     background-image: url("../images/imagePlaceholder.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 60%;
-}
+    /* background-size: 100% 60%; */
+    }
+    .aboutme-paragraph{
+        width: 100%;
+        text-align: left;
+    }
+    .aboutme-page{
+        display: block;
+    }
 }
