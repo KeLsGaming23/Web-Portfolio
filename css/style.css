@@ -138,12 +138,13 @@
     letter-spacing: 0.5em;
 }
 /* About Me Page Section */
-#aboutme{
+/* #aboutme{
     margin: 10px 15px;
-}
+} */
 .aboutme-page{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     animation-name: movesUp;
     animation-duration: .7s;
     animation-timing-function: ease-out;
@@ -190,18 +191,23 @@
 }
 .aboutme-paragraph{
     width: 75%;
+    margin: 0 15px;
     animation-name: moveInUp;
     animation-duration: .7s;
     animation-timing-function: ease-out; 
 }
 /* Education Section */
+.image-carousel{
+    width: 50vw;
+    margin: auto;
+}
 /* Screen for Mobile */
 @media (max-width:1028px) {
     #title{
         text-align: center;
     }
     .main-container{
-        height: 50vh;
+        height: 60vh;
     }
     .navigation{
         padding: 2% 5% 2% 5%;
@@ -226,5 +232,8 @@
     }
     .aboutme-page{
         display: block;
+    }
+    .image-carousel{
+        width: 100vw;
     }
 }
