@@ -48,8 +48,8 @@
 .box{
     padding-top: 10px;
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: #00337C;
     border-radius: 50%;
     overflow: hidden;
@@ -209,8 +209,14 @@
     .main-container{
         height: 60vh;
     }
+    .socmed{
+        justify-content: center;
+    }
     .navigation{
         padding: 2% 5% 2% 5%;
+    }
+    .download-button{
+        padding-bottom: 10px;
     }
     .left-heading{
         padding-top: 50px;
