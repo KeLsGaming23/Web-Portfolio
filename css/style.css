@@ -10,6 +10,11 @@
     background-color: black;
     padding: 2% 5%;
 }
+.index-container{
+    height: 87vh;
+    background-color: black;
+    padding: 2% 5%;
+}
 .left-heading{
     padding-top: 150px;
 }
@@ -48,8 +53,8 @@
 .box{
     padding-top: 10px;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-color: #00337C;
     border-radius: 50%;
     overflow: hidden;
@@ -208,6 +213,9 @@
     }
     .main-container{
         height: 60vh;
+    }
+    .index-container{
+        height: 100vh;
     }
     .socmed{
         justify-content: center;
