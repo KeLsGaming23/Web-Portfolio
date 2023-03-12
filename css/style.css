@@ -15,6 +15,11 @@
     background-color: black;
     padding: 2% 5%;
 }
+.game-container{
+    height: 87vh;
+    background-color: black;
+    padding: 1% 5%; 
+}
 .left-heading{
     padding-top: 150px;
 }
@@ -38,6 +43,35 @@
     animation-name: moveInBottom;
     animation-duration: .7s;
     animation-timing-function: ease-out; 
+}
+.hide-in-pc-view{
+    /* Just hide it in Large screen */
+    display: none;
+}
+.hide-phone-view{
+    /* Show it on Large screen */
+    display: block;
+}
+.animation-from-left{
+    /* Fixing position bug error from unity style */
+    position: absolute;
+    left: 50%; top: 56%; 
+    transform: translate(-50%, -44%);
+    /* --Bug fix end here-- */
+    animation-name: moveInLeft;
+    animation-duration: .7s;
+    animation-timing-function: ease-out; 
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem); }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
 }
 @keyframes moveInBottom {
     0% {
@@ -228,6 +262,17 @@
     }
     .left-heading{
         padding-top: 50px;
+    }
+    .hide-phone-view{
+        /* Just hide it on Mobile */
+        display: none;
+    }
+    .hide-in-pc-view{
+        /* Show this on Mobile */
+        display: block;
+        position: absolute;
+        left: -30%; top: 30%; 
+        transform: translate(70%, -70%)
     }
     .box{
         margin-top: 40px;
