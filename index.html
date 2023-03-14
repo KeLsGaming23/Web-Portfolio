@@ -25,7 +25,7 @@
     <header id="title">
         <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navigation text-info-emphasis bg-info border border-info-subtle">
+            <nav class="navbar navbar-expand-lg navigation text-info-emphasis border border-info-subtle navbar-bg">
 
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,7 +42,7 @@
                             <a class="nav-link" href="aboutme.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.html">Projects</a>
+                            <a class="nav-link" href="#portfolio">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacts</a>
@@ -52,12 +52,12 @@
 
             </nav>
         </div>
-        <div class="index-container bg-info-subtle">
+        <div class="index-container index-container-bg">
             <div class="row d-flex justify-content-evenly">
                 <div class="col-lg-6 left-heading">
                     <h1 class="big-heading">Hi, I'm Michael</h1>
                     <div class="animation-from-bottom">
-                        <p class="paragraph-heading">A self thought Game Developer with over 2 years of using Unity Game
+                        <p class="paragraph-heading">A self taught Game Developer with over 2 years of using Unity Game
                             Engine and also, a full stack
                             web
                             developer</p>
@@ -120,7 +120,7 @@
 
     </main>
 
-    <div id="portfolio" class="bg-info-subtle">
+    <div id="portfolio" class="index-container-bg">
         <h1 class="text-center">Recent Project</h1>
         <p class="text-center">Check out my latest game project and website design, showcasing my skills in game
             development and
@@ -131,7 +131,8 @@
                 <h2>Kawaii Canon</h2>
                 <p>Kawaii Canon is the first game that I developed, which I entered into a game jam where participants
                     had to create a simple game in less than three hours.</p>
-                <a href="kawaiiCanon/index.html" class="btn btn-primary">Learn more</a>
+                <a href="kawaiiCanon/index.html" class="btn btn-dark">
+                    <i class="fa-solid fa-download"></i> Learn more</a>
             </div>
             <div class="portfolio-card">
                 <img src="images/ZombiePanic.jpg" alt="Placeholder Image">
@@ -139,17 +140,48 @@
                 <p>I developed "Zombie Panic" as my second game, drawing inspiration from my favorite games, Final
                     Fantasy Tactics and XCOM. This game is a tactical challenge that puts your strategic abilities to
                     the test.</p>
-                <a href="https://kelsgaming23.itch.io/zombie-panic" class="btn btn-primary">Learn more</a>
+                <a href="https://kelsgaming23.itch.io/zombie-panic" class="btn btn-dark">
+                    <i class="fa-solid fa-download"></i> Learn more</a>
             </div>
             <div class="portfolio-card">
-                <img src="image-placeholder.png" alt="Placeholder Image">
-                <h2>Title 3</h2>
-                <p>First sentence of text goes here.</p>
-                <p>Second sentence of text goes here.</p>
+                <img src="images/Natours.jpg" alt="Placeholder Image">
+                <h2>Natours</h2>
+                <p>Discover the beauty of nature with ease by booking your next outdoor adventure through our website.
+                </p>
+                <a href="natours/index.html" class="btn btn-dark">
+                    <i class="fa-solid fa-eye"></i> Live Demo</a>
             </div>
         </div>
 
     </div>
+    <footer>
+        <div class="footer-logo">
+            <img class="footer-logo-image" src="images/Untitled-1.png" alt="Your Company Name">
+        </div>
+        <div class="footer-links">
+            <nav>
+                <ul class="footer-navigation">
+                    <li class="footer-navigation-links">
+                        <a class="footer-navigation-url" href="index.html">Home</a>
+                    </li>
+                    <li class="footer-navigation-links">
+                        <a class="footer-navigation-url" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="footer-navigation-links">
+                        <a class="footer-navigation-url" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="footer-navigation-links">
+                        <a class="footer-navigation-url" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; <span id="year">2023</span> Michael Armand "kels" Alcoriza</p>
+                <p>This website was made specifically for the KOdeGOPH mini project #1</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
