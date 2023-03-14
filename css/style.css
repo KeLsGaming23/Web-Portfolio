@@ -1,90 +1,117 @@
-.container-fluid{
+.container-fluid {
     margin: 0;
     padding: 0;
 }
-.navigation{
+
+.navigation {
     padding: 2% 15% 2% 5%;
 }
-.main-container{
+
+.main-container {
     height: 87vh;
     background-color: black;
     padding: 2% 5%;
 }
-.index-container{
+
+.index-container {
     height: 87vh;
     background-color: black;
     padding: 2% 5%;
 }
-.game-container{
+
+.game-container {
     height: 87vh;
     background-color: black;
-    padding: 1% 5%; 
+    padding: 1% 5%;
 }
-.left-heading{
+
+.left-heading {
     padding-top: 150px;
 }
-.big-heading{
+
+.big-heading {
     animation-name: moveInUp;
     animation-duration: .7s;
     animation-timing-function: ease-out;
 }
+
 @keyframes moveInUp {
     0% {
         opacity: 0;
-        transform: translateY(-3rem); }
-    80%{
+        transform: translateY(-3rem);
+    }
+
+    80% {
         transform: translateY(-1rem);
     }
+
     100% {
         opacity: 1;
-        transform: translate(0); }
+        transform: translate(0);
+    }
 }
-.animation-from-bottom{
+
+.animation-from-bottom {
     animation-name: moveInBottom;
     animation-duration: .7s;
-    animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
 }
-.hide-in-pc-view{
+
+.hide-in-pc-view {
     /* Just hide it in Large screen */
     display: none;
 }
-.hide-phone-view{
+
+.hide-phone-view {
     /* Show it on Large screen */
     display: block;
 }
-.animation-from-left{
+
+.animation-from-left {
     /* Fixing position bug error from unity style */
     position: absolute;
-    left: 50%; top: 56%; 
+    left: 50%;
+    top: 56%;
     transform: translate(-50%, -44%);
     /* --Bug fix end here-- */
     animation-name: moveInLeft;
     animation-duration: .7s;
-    animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
 }
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-3rem); }
-    80%{
+        transform: translateX(-3rem);
+    }
+
+    80% {
         transform: translateX(-1rem);
     }
+
     100% {
         opacity: 1;
-        transform: translate(0); }
+        transform: translate(0);
+    }
 }
+
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(3rem); }
-    80%{
+        transform: translateY(3rem);
+    }
+
+    80% {
         transform: translateY(1rem);
     }
+
     100% {
         opacity: 1;
-        transform: translate(0); }
+        transform: translate(0);
+    }
 }
-.box{
+
+.box {
     padding-top: 10px;
     position: relative;
     width: 500px;
@@ -93,7 +120,8 @@
     border-radius: 50%;
     overflow: hidden;
 }
-.box::before{
+
+.box::before {
     content: '';
     position: absolute;
     inset: -10px 140px;
@@ -101,18 +129,22 @@
     transition: 0.5s;
     animation: animate 4s linear infinite;
 }
-.box:hover::before{
+
+.box:hover::before {
     inset: -20px 0px;
 }
-@keyframes animate{
-    0%{
+
+@keyframes animate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(100deg);
     }
 }
-.box::after{
+
+.box::after {
     content: '';
     position: absolute;
     inset: 6px;
@@ -120,7 +152,8 @@
     border-radius: 50%;
     z-index: 1;
 }
-.content{
+
+.content {
     position: absolute;
     inset: 30px;
     border: 6px solid #00337C;
@@ -132,7 +165,8 @@
     align-items: center;
     flex-direction: column;
 }
-.content img{
+
+.content img {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,10 +177,12 @@
     pointer-events: none;
     z-index: 3;
 }
-.box:hover .content img{
+
+.box:hover .content img {
     opacity: 0;
 }
-.content h2{
+
+.content h2 {
     position: relative;
     font-size: 1.5em;
     text-align: center;
@@ -154,12 +190,14 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-.content h2 span{
+
+.content h2 span {
     font-weight: 300;
     font-size: 0.75em;
 
 }
-.content a{
+
+.content a {
     position: relative;
     margin-top: 10px;
     padding: 10px 20px;
@@ -173,14 +211,89 @@
     text-decoration: none;
     transition: 0.5s;
 }
-.content a:hover{
+
+.content a:hover {
     letter-spacing: 0.5em;
 }
+
+/* Services Offered */
+#service-offer {
+    padding: 7% 15%;
+    background-color: #fff;
+    height: 100%;
+}
+
+#service-offer span {
+    color: #03C988;
+}
+
+.service-offer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-offer-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: #03C988;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #3A98B9;
+}
+
+/* Portfolio Section */
+#portfolio {
+    height: 100vh;
+}
+
+p #portfolio {
+    width: 50%;
+    margin: auto;
+}
+
+.portfolio-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 45px 20px;
+}
+
+.portfolio-card {
+    flex-basis: calc(33.33% - 10px);
+    background-color: #00337C;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.648);
+}
+
+.portfolio-card:hover {
+    background: linear-gradient(135deg, #72EDF2, #0780a5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgb(12, 1, 63);
+    transform: scale(1.05);
+  }
+
+.portfolio-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.portfolio-card h2 {
+    margin-bottom: 10px;
+}
+
 /* About Me Page Section */
 /* #aboutme{
     margin: 10px 15px;
 } */
-.aboutme-page{
+.aboutme-page {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -188,111 +301,145 @@
     animation-duration: .7s;
     animation-timing-function: ease-out;
 }
+
 @keyframes movesUp {
     0% {
         opacity: 0;
-        transform: translateY(3rem); }
-    80%{
+        transform: translateY(3rem);
+    }
+
+    80% {
         transform: translateY(1rem);
     }
+
     100% {
         opacity: 1;
-        transform: translate(0); }
+        transform: translate(0);
+    }
 }
-.bg-image-placeholder{
+
+.bg-image-placeholder {
     background-image: url("../images/imagePlaceholder.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.p-shadow{
+
+.p-shadow {
     text-shadow: 2px 4px 13px rgb(25, 24, 24);
 }
-.hr-width{
+
+.hr-width {
     width: 75%;
 }
-.icon-color{
+
+.icon-color {
     color: black;
     transition: 0.5s;
 }
-.icon-color:hover{
+
+.icon-color:hover {
     color: #0b516f;
 }
-.image-profile{
+
+.image-profile {
     width: 250px;
     height: 250px;
     animation-name: movesUp;
     animation-duration: .7s;
     animation-timing-function: ease-out;
 }
-.aboutme-long{
+
+.aboutme-long {
     padding: 0 3%;
     width: 100vw;
 }
-.aboutme-paragraph{
+
+.aboutme-paragraph {
     width: 75%;
     margin: 0 15px;
     animation-name: moveInUp;
     animation-duration: .7s;
-    animation-timing-function: ease-out; 
+    animation-timing-function: ease-out;
 }
+
 /* Education Section */
-.image-carousel{
+.image-carousel {
     width: 50vw;
     margin: auto;
 }
+
 /* Screen for Mobile */
 @media (max-width:1028px) {
-    #title{
+    #title {
         text-align: center;
     }
-    .main-container{
+
+    .main-container {
         height: 60vh;
     }
-    .index-container{
+
+    .index-container {
         height: 100vh;
     }
-    .socmed{
+
+    .socmed {
         justify-content: center;
     }
-    .navigation{
+
+    .navigation {
         padding: 2% 5% 2% 5%;
     }
-    .download-button{
+
+    .download-button {
         padding-bottom: 10px;
     }
-    .left-heading{
+
+    .left-heading {
         padding-top: 50px;
     }
-    .hide-phone-view{
+
+    .hide-phone-view {
         /* Just hide it on Mobile */
         display: none;
     }
-    .hide-in-pc-view{
+
+    .hide-in-pc-view {
         /* Show this on Mobile */
         display: block;
         position: absolute;
-        left: -30%; top: 30%; 
+        left: -30%;
+        top: 30%;
         transform: translate(70%, -70%)
     }
-    .box{
+
+    .box {
         margin-top: 40px;
         width: 350px;
         height: 350px;
     }
+
     /* About Me Page Section */
-    .bg-image-placeholder{
-    background-image: url("../images/imagePlaceholder.jpg");
-    background-repeat: no-repeat;
-    /* background-size: 100% 60%; */
+    .bg-image-placeholder {
+        background-image: url("../images/imagePlaceholder.jpg");
+        background-repeat: no-repeat;
+        /* background-size: 100% 60%; */
     }
-    .aboutme-paragraph{
+
+    .aboutme-paragraph {
         width: 100%;
         text-align: left;
     }
-    .aboutme-page{
+
+    .aboutme-page {
         display: block;
     }
-    .image-carousel{
+
+    .image-carousel {
         width: 100vw;
+    }
+
+    /* Portfolio Section */
+    #portfolio p {
+        width: 90%;
     }
 }
