@@ -335,21 +335,24 @@ p #portfolio {
 }
 
 .bg-image-placeholder {
-    background-image: url("../images/imagePlaceholder.jpg");
+    background-image: url("../images/aboutme-bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.p-style{
+    color: #fff;
+}
 .p-shadow {
-    text-shadow: 2px 4px 13px rgb(25, 24, 24);
+    text-shadow: 0px 5px 10px rgb(202, 202, 202);
 }
 
 .hr-width {
+    color: #fff;
     width: 75%;
 }
 
 .icon-color {
-    color: black;
+    color: rgb(252, 247, 247);
     transition: 0.5s;
 }
 
@@ -523,7 +526,7 @@ footer {
 
     /* About Me Page Section */
     .bg-image-placeholder {
-        background-image: url("../images/imagePlaceholder.jpg");
+        background-image: url("../images/aboutme-bg.jpg");
         background-repeat: no-repeat;
         /* background-size: 100% 60%; */
     }
@@ -539,6 +542,7 @@ footer {
 
     .image-carousel {
         width: 100vw;
+        margin: auto;
     }
 
     /* Portfolio Section */
