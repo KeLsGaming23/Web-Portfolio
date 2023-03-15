@@ -6,12 +6,15 @@
 .navigation {
     padding: 2% 15% 2% 5%;
 }
-.navbar-bg{
+
+.navbar-bg {
     background-color: #5DA7DB;
 }
-.index-container-bg{
-    background-color: #81C6E8;
+
+.index-container-bg {
+    background-color: #a5cce1;
 }
+
 .main-container {
     height: 87vh;
     padding: 2% 5%;
@@ -281,12 +284,13 @@ p #portfolio {
 .portfolio-card .btn {
     position: absolute;
     /* Add this to create an absolute position context for the button */
-    bottom: 15px;
+    /* bottom: 15px; */
     /* Align the button to the bottom of the card */
     left: 50%;
     /* Center the button horizontally */
     transform: translateX(-50%);
     /* Center the button horizontally */
+    z-index: 1;
 }
 
 .portfolio-card:hover {
@@ -339,9 +343,11 @@ p #portfolio {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.p-style{
+
+.p-style {
     color: #fff;
 }
+
 .p-shadow {
     text-shadow: 0px 5px 10px rgb(202, 202, 202);
 }
@@ -389,7 +395,7 @@ p #portfolio {
 
 /*Footer Section*/
 footer {
-    background-color: #5837D0;
+    background-color: #281861;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,7 +408,8 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
 }
-.footer-logo-image{
+
+.footer-logo-image {
     width: 15rem;
     height: 15rem;
 }
@@ -440,38 +447,13 @@ footer {
     transition: all 0.3s ease-in-out;
     display: inline-block;
 }
-.copyright{
+
+.copyright {
     color: #fff;
 }
+
 #year {
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin: 0 0 1rem 0;
-    }
-
-    .footer-navigation {
-        margin-bottom: 1rem;
-    }
-
-    .footer-navigation-links {
-        margin: 0 0.5rem;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
-    .copyright{
-        text-align: center;
-    }
 }
 
 /* Screen for Mobile */
@@ -546,7 +528,46 @@ footer {
     }
 
     /* Portfolio Section */
+    #portfolio {
+        height: 210vh;
+    }
+
     #portfolio p {
         width: 90%;
+    }
+
+    .portfolio-card-container {
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        position: static;
+        flex-basis: 100%;
+    }
+    /* Footer Section */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 0 1rem 0;
+    }
+
+    .footer-navigation {
+        margin-bottom: 1rem;
+    }
+
+    .footer-navigation-links {
+        margin: 0 0.5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align: center;
     }
 }
