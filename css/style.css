@@ -356,12 +356,17 @@ p #portfolio {
     color: #fff;
     width: 75%;
 }
-
+.icon-color-black {
+    color: #000;
+    transition: 0.5s;
+}
 .icon-color {
     color: rgb(252, 247, 247);
     transition: 0.5s;
 }
-
+.icon-color-black:hover {
+    color: #0b516f;
+}
 .icon-color:hover {
     color: #0b516f;
 }
