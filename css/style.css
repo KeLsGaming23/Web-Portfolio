@@ -223,9 +223,9 @@
 
 /* Services Offered */
 #service-offer {
-    padding: 7% 15%;
+    padding: 2% 15%;
     background-color: #fff;
-    height: 100%;
+    height: 70%;
 }
 
 #service-offer span {
@@ -253,7 +253,7 @@
 
 /* Portfolio Section */
 #portfolio {
-    height: 100vh;
+    height: 90vh;
 }
 
 p #portfolio {
