@@ -19,6 +19,11 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom style.css -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,13 +41,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html#home" onclick="navigate('home')">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="aboutme.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Projects</a>
+                            <a class="nav-link" href="#portfolio" onclick="navigate('portfolio')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service-offer" onclick="navigate('service-offer')">Service Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer" onclick="navigate('footer')">Footer</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacts</a>
@@ -52,7 +63,7 @@
 
             </nav>
         </div>
-        <div class="index-container index-container-bg">
+        <div id="home" class="index-container index-container-bg page">
             <div class="row d-flex justify-content-evenly">
                 <div class="col-lg-6 left-heading">
                     <h1 class="big-heading">Hi, I'm Michael</h1>
@@ -93,7 +104,7 @@
             </div>
         </div>
     </header>
-    <main id="service-offer">
+    <main id="service-offer" class="page hidden">
         <h4>My <span>services</span></h4>
         <h1>What I do...</h1>
         <div class="row">
@@ -120,7 +131,7 @@
 
     </main>
 
-    <div id="portfolio" class="index-container-bg">
+    <div id="portfolio" class="index-container-bg hidden page">
         <h1 class="text-center">Recent Project</h1>
         <p class="text-center">Check out my latest game project and website design, showcasing my skills in game
             development and
@@ -154,7 +165,7 @@
         </div>
 
     </div>
-    <footer>
+    <footer id="footer" class="hidden page">
         <div class="footer-logo">
             <img class="footer-logo-image" src="images/Untitled-1.png" alt="Your Company Name">
         </div>
@@ -186,6 +197,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script>
+        window.history.replaceState({ page: 'home' }, 'home', '#home');
+        function updateContent(pageName) {
+            // hide all pages
+            const pages = document.getElementsByClassName('page');
+            for (let p of pages) {
+                p.classList.add('hidden');
+            }
+
+            // show current page
+            const currentPage = document.getElementById(pageName);
+            currentPage.classList.remove('hidden');
+
+        }
+        function navigate(pageName) {
+            // Push the new state onto the history stack
+            window.history.pushState({ page: pageName }, pageName, `#${pageName}`);
+
+            updateContent(pageName);
+        }
+        window.addEventListener('popstate', function(e) {
+            if (e.state) {
+                updateContent(e.state.page);
+            }
+        });
+    </script>
 </body>
 
 </html>
